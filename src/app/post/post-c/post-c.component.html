@@ -1,0 +1,26 @@
+<h2>my post c component</h2>
+
+
+<mat-card>
+    <mat-form-field>
+       <input type="text" [(ngModel)] = "entertitle">
+    </mat-form-field>
+    <mat-form-field>
+        <textarea matInput rows ='6' [(ngModel)]="entercontent"></textarea>
+     </mat-form-field>
+    <br><hr><br>
+<button mat-raised-button color="accent" (click)="onAddpost()">submit post</button>
+</mat-card>
+
+
+<!--<textarea rows ='6' #postinput></textarea>
+<textarea matInput rows ='6' [(ngModel)]="entervalue"></textarea>-->
+<!--<hr>-->
+<!--<button (click)="onAddpost(postinput)">submit post</button>-->
+
+<mat-card>
+    <p>
+        {{newpost}}
+    </p>
+    <hr>
+</mat-card>
